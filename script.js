@@ -1,5 +1,5 @@
 let i = 0;
-let txt = "Mi chiamo Francesco Bellomi e sono un Junior Web Developer! Scorri in basso per sapere di più su di me.";
+let txt = `Mi chiamo Francesco Bellomi e sono un Junior Web Developer! Scorri in basso per sapere di più su di me.`;
 let speed = 70;
 
 setTimeout(() => {
