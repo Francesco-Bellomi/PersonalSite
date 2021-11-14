@@ -1,583 +1,870 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- UIkit CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/css/uikit.min.css" />
-
-
-
-    <!-- google font  -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap" rel="stylesheet">
-
-
-    <!-- fontawesome  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/css/uikit.min.css"
     />
 
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <title>Francesco Bellomi</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- Navbar  -->
     <nav id="nav" class="navbar navbar-expand-lg bg-nav">
-        <div class="container-fluid text-center justify-content-center d-flex">
-            <p class="navbar-brand me-0 fs-1 logo fw-bold mx-2 my-0" href="#">Francesco Bellomi</p>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon text-center"><img src="img/laptop.png" class="img-fluid" alt=""></span>
-          </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item px-2">
-                        <a class="nav-link active" aria-current="page" href="#AboutMe">About Me</a>
-                    </li>
-                    <li class="nav-item px-2">
-                        <a class="nav-link active" href="#MyWorks">Works</a>
-                    </li>
-                    <li class="nav-item px-2">
-                        <a class="nav-link active" href="#contacts" aria-current="page">Contacts</a>
-                    </li>
-                    <li class="nav-item px-2">
-                        <a class="nav-link active" href="curriculum/CVfrancescobellomi.pdf" aria-current="page" target="_blank">Curriculum</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container-fluid text-center justify-content-center d-flex">
+        <p class="navbar-brand me-0 fs-1 logo fw-bold mx-2 my-0" href="#">
+          Francesco Bellomi
+        </p>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon text-center mobile-menu"
+            ><img src="img/laptop.png" class="img-fluid" alt=""
+          /></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item px-2">
+              <a class="nav-link active" aria-current="page" href="#AboutMe"
+                >About Me</a
+              >
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link active" href="#MyWorks">Works</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link active" href="#contacts" aria-current="page"
+                >Contacts</a
+              >
+            </li>
+            <li class="nav-item px-2">
+              <a
+                class="nav-link active"
+                href="curriculum/FB-aggiornato.pdf"
+                aria-current="page"
+                target="_blank"
+                >Curriculum</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
-
 
     <!-- Home  -->
     <header id="start" class="pb-5">
-        <div class="container-fluid py-5">
-            <div class="row align-items-center justify-content-center">
-                <div class=" col-8 col-md-6 col-lg-4 text-center ">
-                    <img src="img/frab.png" class="img-fluid img-custom" alt="">
-                </div>
-                <div class="col-12 col-lg-6 text-center">
-                    <h2 class="underline fs-1 mt-2">Benvenuto!</h2>
-                    <div id="welcomeCard">
-
-                        <p class="p-2 fs-3 card-text fw-bold" id="benvenuto"></p>
-                    </div>
-                </div>
+      <div class="container-fluid py-5">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-8 col-md-6 col-lg-4 text-center">
+            <img src="img/frab.png" class="img-fluid img-custom" alt="" />
+          </div>
+          <div class="col-12 col-lg-6 text-center">
+            <h2 class="underline fs-1 mt-2">Benvenuto!</h2>
+            <div id="welcomeCard">
+              <p class="p-2 fs-3 card-text fw-bold" id="benvenuto"></p>
             </div>
+          </div>
         </div>
+      </div>
     </header>
 
     <!-- About Me  -->
-    <section id="AboutMe" class="container-fluid bg-tri ">
-        <div class="row py-5 align-items-center justify-content-evenly">
-            <div class="col-12 col-lg-8 card">
-                <div class="card-body">
-                    <h2 class="text-center py-3 underline card-title">About Me</h2>
-                    <p class=" card-text py-2 fs-4">
-                        Sono Nato a <em>Mantova</em> il 23 giugno del 1996 , mi sono diplomato all'alberghiero di <em>Piacenza</em> in operatore dei servizi di ristorazione nel 2015 e ho lavorato i successivi 5 anni nell'ambito della ristorazione e alimentare
-                        , finchè a <strong>marzo del 2021</strong> ho deciso di dare una svolta alla mia vita entrando in un mondo che da sempre mi ha affascinato ossia la programmazione , partecipando al <strong>coding bootcamp di Aulab</strong> che
-                        ho svolto da <strong>remoto</strong> per una durata di <strong>tre mesi</strong> , nel quale ho imparato le basi dello <strong>sviluppo web</strong> e a lavorare con le <strong>metodologie Agili</strong> .
-                    </p>
-                    <p class="fs-4 card-text py-3">
-                        Mi reputo una persona <strong> determinata , ambiziosa , volenterosa di imparare e di mettersi in gioco.</strong> Grazie alle mie esperienze lavorative posso dire di saper lavorare in team e faccio sempre il possibile per essere
-                        d'aiuto a chi ne ha bisogno.
-                    </p>
-
-                </div>
-            </div>
+    <section id="AboutMe" class="container-fluid bg-tri">
+      <div class="row py-5 align-items-center justify-content-evenly">
+        <div class="col-12 col-lg-8 card">
+          <div class="card-body">
+            <h2 class="text-center py-3 underline card-title">About Me</h2>
+            <p class="card-text py-2 fs-4">
+              Sono Nato a <em>Mantova</em> il 23 giugno del 1996 , mi sono
+              diplomato all'alberghiero di <em>Piacenza</em> in operatore dei
+              servizi di ristorazione nel 2015 e ho lavorato i successivi 5 anni
+              nell'ambito della ristorazione e alimentare. Così a
+              <strong>marzo del 2021</strong> ho deciso di dare una svolta alla
+              mia vita entrando in un mondo che da sempre mi ha affascinato
+              ossia la programmazione , partecipando a corsi di programmazione
+              come il <strong>coding bootcamp di Aulab</strong> che ho svolto da
+              <strong>remoto</strong> per una durata di
+              <strong>tre mesi</strong> , nel quale ho imparato le basi dello
+              <strong>sviluppo web</strong> e a lavorare con le
+              <strong>metodologie Agili</strong>.
+            </p>
+            <p class="fs-4 card-text py-3">
+              Mi reputo una persona
+              <strong>
+                determinata , ambiziosa , volenterosa di imparare e di mettersi
+                in gioco.</strong
+              >
+              Grazie alle mie esperienze lavorative posso dire di saper lavorare
+              in team e di fare sempre il possibile per essere di aiuto a chi ne
+              ha bisogno.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- study  -->
     <section class="container py-5 study">
-        <div class="row text-center">
-            <h2 class="underline">Cosa sto studiando ultimamente</h2>
-            <div class="col-12 my-5">
-
-
-                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="autoplay: true; autoplay-interval: 2000;">
-
-                    <ul class=" uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-6@m ">
-                        <li>
-                            <div class="uk-position-center uk-panel ">
-                                <h2><i id="work" class="work  fa-2x px-5 py-5 fab fa-html5 "></i></h2>
-                            </div>
-                        </li>
-                        <li>
-
-                            <div class="uk-position-center uk-panel ">
-                                <h2><i id="work" class="work  fa-2x px-5 py-5 fab fa-css3 "></i></h2>
-                            </div>
-                        </li>
-                        <li>
-
-                            <div class="uk-position-center uk-panel ">
-                                <h2><i id="work" class="work  fa-2x px-5 py-5 fab fa-js-square "></i></h2>
-                            </div>
-                        </li>
-                        <li>
-
-                            <div class="uk-position-center uk-panel ">
-                                <h2><i id="work" class="work  fa-2x px-5 py-5 fab fa-bootstrap "></i></h2>
-                            </div>
-                        </li>
-                        <li>
-
-                            <div class="uk-position-center uk-panel ">
-                                <h2><i id="work" class="work  fa-2x px-5 py-5 fab fa-php "></i></h2>
-                            </div>
-                        </li>
-                        <li>
-
-                            <div class="uk-position-center uk-panel ">
-                                <h2><i id="work" class="work  fa-2x px-5 py-5 fab fa-laravel "></i></h2>
-                            </div>
-                        </li>
-                        <li>
-
-                            <div class="uk-position-center uk-panel ">
-                                <h2><i id="work" class="work  fa-2x px-5 py-5 fab fa-react "></i></h2>
-                            </div>
-                        </li>
-                        <li>
-
-                            <div class="uk-position-center uk-panel ">
-                                <h2><i id="work" class="work  fa-2x fab px-5 py-5 fa-node-js "></i></h2>
-                            </div>
-                        </li>
-                        <li>
-                            <h2><i id="work" class="work  fa-2x fab px-5 py-5 fa-npm "></i></h2>
-                            <div class="uk-position-center uk-panel ">
-                            </div>
-                        </li>
-                    </ul>
-
-                    <a class="uk-position-center-left uk-position-small uk-hidden-hover " href="# " uk-slidenav-previous uk-slider-item="previous "></a>
-                    <a class="uk-position-center-right uk-position-small uk-hidden-hover " href="# " uk-slidenav-next uk-slider-item="next "></a>
-
+      <div class="row text-center">
+        <h2 class="underline">Cosa sto studiando ultimamente</h2>
+        <div class="col-12 my-5">
+          <div
+            class="uk-position-relative uk-visible-toggle uk-light"
+            tabindex="-1"
+            uk-slider="autoplay: true; autoplay-interval: 2000;"
+          >
+            <ul
+              class="
+                uk-slider-items
+                uk-child-width-1-2
+                uk-child-width-1-3@s
+                uk-child-width-1-6@m
+              "
+            >
+              <li>
+                <div class="uk-position-center uk-panel">
+                  <h2>
+                    <i id="work" class="work fa-2x px-5 py-5 fab fa-html5"></i>
+                  </h2>
                 </div>
-            </div>
+              </li>
+              <li>
+                <div class="uk-position-center uk-panel">
+                  <h2>
+                    <i id="work" class="work fa-2x px-5 py-5 fab fa-css3"></i>
+                  </h2>
+                </div>
+              </li>
+              <li>
+                <div class="uk-position-center uk-panel">
+                  <h2>
+                    <i
+                      id="work"
+                      class="work fa-2x px-5 py-5 fab fa-js-square"
+                    ></i>
+                  </h2>
+                </div>
+              </li>
+              <li>
+                <div class="uk-position-center uk-panel">
+                  <h2>
+                    <i
+                      id="work"
+                      class="work fa-2x px-5 py-5 fab fa-bootstrap"
+                    ></i>
+                  </h2>
+                </div>
+              </li>
+              <li>
+                <div class="uk-position-center uk-panel">
+                  <h2>
+                    <i id="work" class="work fa-2x px-5 py-5 fab fa-java"></i>
+                  </h2>
+                </div>
+              </li>
+              <li>
+                <div class="uk-position-center uk-panel">
+                  <h2>
+                    <i id="work" class="work fa-2x px-5 py-5 fab fa-php"></i>
+                  </h2>
+                </div>
+              </li>
+              <li>
+                <div class="uk-position-center uk-panel">
+                  <h2>
+                    <i
+                      id="work"
+                      class="work fa-2x px-5 py-5 fab fa-laravel"
+                    ></i>
+                  </h2>
+                </div>
+              </li>
+              <li>
+                <div class="uk-position-center uk-panel">
+                  <h2>
+                    <i id="work" class="work fa-2x px-5 py-5 fab fa-react"></i>
+                  </h2>
+                </div>
+              </li>
+              <li>
+                <div class="uk-position-center uk-panel">
+                  <h2>
+                    <i
+                      id="work"
+                      class="work fa-2x fab px-5 py-5 fa-node-js"
+                    ></i>
+                  </h2>
+                </div>
+              </li>
+              <li>
+                <h2>
+                  <i id="work" class="work fa-2x fab px-5 py-5 fa-npm"></i>
+                </h2>
+                <div class="uk-position-center uk-panel"></div>
+              </li>
+            </ul>
+
+            <a
+              class="uk-position-center-left uk-position-small uk-hidden-hover"
+              href="# "
+              uk-slidenav-previous
+              uk-slider-item="previous "
+            ></a>
+            <a
+              class="uk-position-center-right uk-position-small uk-hidden-hover"
+              href="# "
+              uk-slidenav-next
+              uk-slider-item="next "
+            ></a>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Work  -->
     <section class="container-fluid" id="MyWorks">
-        <div class="row justify-content-center ">
-            <div class="col-12 pb-5 ">
-                <h2 class="text-center py-3 underline ">
-                    My Works
-                </h2>
-                <div class="row justify-content-center text-center ">
-                    <div class="col-12 col-sm-8 ">
-                        <p class="fs-4 ">Di seguito vi mostro qualche immagine di alcuni dei <strong> progetti</strong> svolti sia durante il <strong>cooding bootcamp</strong> di Aulab con i colleghi di corso , sia autonomamente.
-                            <em>Cliccate sull'icona di github per vedere il codice del progetto</em> (<i class="fab fa-github-alt
-                    text-sec px-3 "></i>)</p>
-                    </div>
-                </div>
+      <div class="row justify-content-center">
+        <div class="col-12 pb-5">
+          <h2 class="text-center py-3 underline">My Works</h2>
+          <div class="row justify-content-center text-center">
+            <div class="col-12 col-sm-8">
+              <p class="fs-4">
+                Di seguito vi mostro qualche immagine di alcuni dei
+                <strong> progetti</strong> svolti sia durante il
+                <strong>cooding bootcamp</strong> di Aulab con i colleghi di
+                corso , sia autonomamente.
+                <em
+                  >Cliccate sull'icona di github per vedere il codice del
+                  progetto</em
+                >
+                (<i class="fab fa-github-alt text-sec px-3"></i>)
+              </p>
             </div>
-            <div id="p1" class="col-12 col-sm-4 py-5 text-center ">
-                <div class="uk-position-relative uk-visible-toggle uk-light " tabindex="-1 " uk-slider="center: true; autoplay: true; autoplay-interval: 4000; ">
-                    <h2 class=" py-5 text-sec text-center "> <span class="underline">E-commerce</span> <a href="https://github.com/Francesco-Bellomi/progetto-ecommerce " target="_blank "><i class="fab fa-github-alt text-sec github px-3 "></i></a>
-                        <i id="b1" class="remZoom fas fa-search-plus text-sec px-3 "></i>
-                    </h2>
-
-                    <ul class="uk-slider-items uk-grid ">
-                        <li class="uk-width-1">
-                            <div class="uk-panel ">
-                                <img src="img2/progetto finale 1.png " class="img-fluid " alt=" ">
-                                <div class="uk-position-center uk-panel ">
-
-                                </div>
-                            </div>
-                        </li>
-                        <li class="uk-width-1">
-                            <div class="uk-panel ">
-                                <img src="img2/progetto finale 2.png " class="img-fluid " alt=" ">
-                                <div class="uk-position-center uk-panel ">
-
-                                </div>
-                            </div>
-                        </li>
-                        <li class="uk-width-1">
-                            <div class="uk-panel ">
-                                <img src="img2/progetto finale 3.png " class="img-fluid " alt=" ">
-                                <div class="uk-position-center uk-panel ">
-
-                                </div>
-                            </div>
-                        </li>
-                        <li class="uk-width-1">
-                            <div class="uk-panel ">
-                                <img src="img2/progetto finale 4.png " class="img-fluid " alt=" ">
-                                <div class="uk-position-center uk-panel ">
-
-                                </div>
-                            </div>
-                        </li>
-                        <li class="uk-width-1">
-                            <div class="uk-panel ">
-                                <img src="img2/progetto finale 5.png " class="img-fluid " alt=" ">
-                                <div class="uk-position-center uk-panel ">
-
-                                </div>
-                            </div>
-                        </li>
-                        <li class="uk-width-1">
-                            <div class="uk-panel ">
-                                <img src="img2/progetto finale 6.png " class="img-fluid " alt=" ">
-                                <div class="uk-position-center uk-panel ">
-
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-
-                    <a class="uk-position-center-left uk-position-small uk-hidden-hover " href="# " uk-slidenav-previous uk-slider-item="previous "></a>
-                    <a class="uk-position-center-right uk-position-small uk-hidden-hover " href="# " uk-slidenav-next uk-slider-item="next "></a>
-
-                </div>
-            </div>
-            <div id="p2" class="col-12 col-sm-4 py-5 ">
-
-                <div class="uk-position-relative uk-visible-toggle uk-light " tabindex="-1 " uk-slider="center: true; autoplay: true; autoplay-interval: 4000; ">
-                    <h2 class=" py-5 text-sec text-center "> <span class="underline">Blog di Auto</span> <a href="https://github.com/Francesco-Bellomi/Car-Blog " target="_blank "><i class="fab fa-github-alt text-sec github px-3 "></i></a>
-                        <i id="b2" class="remZoom fas fa-search-plus text-sec px-3 "></i>
-                    </h2>
-                    <p class="text-sec fs-5 "></p>
-                    <ul class="uk-slider-items uk-grid ">
-                        <li class="uk-width-1">
-                            <div class="uk-panel ">
-                                <img src="img2/Progetto blog car 1.png " class="img-fluid " alt=" ">
-                                <div class="uk-position-center uk-panel ">
-
-                                </div>
-                            </div>
-                        </li>
-                        <li class="uk-width-1">
-                            <div class="uk-panel ">
-                                <img src="img2/carblog 3.png " class="img-fluid " alt=" ">
-                                <div class="uk-position-center uk-panel ">
-
-                                </div>
-                            </div>
-                        </li>
-                        <li class="uk-width-1">
-                            <div class="uk-panel ">
-                                <img src="img2/carblog 4.png " class="img-fluid " alt=" ">
-                                <div class="uk-position-center uk-panel ">
-
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-
-                    <a class="uk-position-center-left uk-position-small uk-hidden-hover " href="# " uk-slidenav-previous uk-slider-item="previous "></a>
-                    <a class="uk-position-center-right uk-position-small uk-hidden-hover " href="# " uk-slidenav-next uk-slider-item="next "></a>
-
-                </div>
-
-
-            </div>
-            <div id="p3" class="col-12 col-sm-4 py-5 ">
-
-                <div class="uk-position-relative uk-visible-toggle uk-light " tabindex="-1" uk-slider="center: true; autoplay: true; autoplay-interval: 4000; ">
-                    <h2 class=" py-5 text-sec text-center "> <span class="underline">Sito Dentista</span> <a href="https://github.com/Francesco-Bellomi/Progetto-Dentista " target="_blank "><i class="fab fa-github-alt text-sec github px-3 "></i></a>
-                        <i id="b3" class="remZoom fas fa-search-plus text-sec px-3 "></i>
-                    </h2>
-
-                    <ul class="uk-slider-items uk-grid ">
-                        <li class="uk-width-1">
-                            <div class="uk-panel ">
-                                <img src="img2/progetto dentista 1.png " class="img-fluid " alt=" ">
-                                <div class="uk-position-center uk-panel ">
-
-                                </div>
-                            </div>
-                        </li>
-                        <li class="uk-width-1">
-                            <div class="uk-panel ">
-                                <img src="img2/progetto dentista 2.png " class="img-fluid " alt=" ">
-                                <div class="uk-position-center uk-panel ">
-
-                                </div>
-                            </div>
-                        </li>
-                        <li class="uk-width-1">
-                            <div class="uk-panel ">
-                                <img src="img2/progetto dentista 3.png " class="img-fluid " alt=" ">
-                                <div class="uk-position-center uk-panel ">
-
-                                </div>
-                            </div>
-                        </li>
-                        <li class="uk-width-1">
-                            <div class="uk-panel ">
-                                <img src="img2/progetto dentista 4.png " class="img-fluid " alt=" ">
-                                <div class="uk-position-center uk-panel ">
-
-                                </div>
-                            </div>
-                        </li>
-                        <li class="uk-width-1">
-                            <div class="uk-panel ">
-                                <img src="img2/progetto dentista 5.png " class="img-fluid " alt=" ">
-                                <div class="uk-position-center uk-panel ">
-
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-
-                    <a class="uk-position-center-left uk-position-small uk-hidden-hover " href="# " uk-slidenav-previous uk-slider-item="previous "></a>
-                    <a class="uk-position-center-right uk-position-small uk-hidden-hover " href="# " uk-slidenav-next uk-slider-item="next "></a>
-
-                </div>
-
-
-            </div>
-            <div id="p4" class="col-12 col-sm-4 py-5 ">
-
-                <div class="uk-position-relative uk-visible-toggle uk-light " tabindex="-1 " uk-slider="center: true; autoplay: true; autoplay-interval: 4000; ">
-                    <h2 class=" py-5 text-sec text-center "> <span class="underline">Landing Page</span> <a href="https://github.com/Francesco-Bellomi/LandingPageRed " target="_blank "><i class="fab fa-github-alt text-sec github px-3 "></i></a>
-                        <i id="b4" class="remZoom fas fa-search-plus text-sec px-3 "></i>
-                    </h2>
-
-                    <ul class="uk-slider-items uk-grid ">
-                        <li class="uk-width-1">
-                            <div class="uk-panel ">
-                                <img src="img2/progetto red 1.png " class="img-fluid " alt=" ">
-                                <div class="uk-position-center uk-panel ">
-
-                                </div>
-                            </div>
-                        </li>
-                        <li class="uk-width-1">
-                            <div class="uk-panel ">
-                                <img src="img2/progetto red 2.png " class="img-fluid " alt=" ">
-                                <div class="uk-position-center uk-panel ">
-
-                                </div>
-                            </div>
-                        </li>
-                        <li class="uk-width-1">
-                            <div class="uk-panel ">
-                                <img src="img2/progetto red 3.png " class="img-fluid " alt=" ">
-                                <div class="uk-position-center uk-panel ">
-
-                                </div>
-                            </div>
-                        </li>
-                        <li class="uk-width-1">
-                            <div class="uk-panel ">
-                                <img src="img2/progetto red 4.png " class="img-fluid " alt=" ">
-                                <div class="uk-position-center uk-panel ">
-
-                                </div>
-                            </div>
-                        </li>
-                        <li class="uk-width-1">
-                            <div class="uk-panel ">
-                                <img src="img2/progetto red 4.png " class="img-fluid " alt=" ">
-                                <div class="uk-position-center uk-panel ">
-
-                                </div>
-                            </div>
-                        </li>
-                        <li class="uk-width-1">
-                            <div class="uk-panel ">
-                                <img src="img2/progetto red 5.png " class="img-fluid " alt=" ">
-                                <div class="uk-position-center uk-panel ">
-
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-
-                    <a class="uk-position-center-left uk-position-small uk-hidden-hover " href="# " uk-slidenav-previous uk-slider-item="previous "></a>
-                    <a class="uk-position-center-right uk-position-small uk-hidden-hover " href="# " uk-slidenav-next uk-slider-item="next "></a>
-
-                </div>
-
-
-            </div>
-            <div id="p5" class="col-12 col-sm-4 py-5 ">
-
-                <div class="uk-position-relative uk-visible-toggle uk-light " tabindex="-1 " uk-slider="center: true; autoplay: true; autoplay-interval: 4000; ">
-                    <h2 class=" py-5 text-sec text-center "> <span class="underline">E-commerce</span> <a href="https://github.com/Francesco-Bellomi/Recap-Project " target="_blank "><i class="fab fa-github-alt text-sec github px-3 "></i></a>
-                        <i id="b5" class="remZoom fas fa-search-plus text-sec px-3 "></i>
-                    </h2>
-
-                    <ul class="uk-slider-items uk-grid ">
-                        <li class="uk-width-1">
-                            <div class="uk-panel ">
-                                <img src="img2/Recap online 1.png " class="img-fluid " alt=" ">
-                                <div class="uk-position-center uk-panel ">
-
-                                </div>
-                            </div>
-                        </li>
-                        <li class="uk-width-1">
-                            <div class="uk-panel ">
-                                <img src="img2/recap online 2.png " class="img-fluid " alt=" ">
-                                <div class="uk-position-center uk-panel ">
-
-                                </div>
-                            </div>
-                        </li>
-                        <li class="uk-width-1">
-                            <div class="uk-panel ">
-                                <img src="img2/recap online 3.png " class="img-fluid " alt=" ">
-                                <div class="uk-position-center uk-panel ">
-
-                                </div>
-                            </div>
-                        </li>
-                        <li class="uk-width-1">
-                            <div class="uk-panel ">
-                                <img src="img2/recap online 4.png " class="img-fluid " alt=" ">
-                                <div class="uk-position-center uk-panel ">
-
-                                </div>
-                            </div>
-                        </li>
-                        <li class="uk-width-1">
-                            <div class="uk-panel ">
-                                <img src="img2/recap online 5.png " class="img-fluid " alt=" ">
-                                <div class="uk-position-center uk-panel ">
-
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-
-                    <a class="uk-position-center-left uk-position-small uk-hidden-hover " href="# " uk-slidenav-previous uk-slider-item="previous "></a>
-                    <a class="uk-position-center-right uk-position-small uk-hidden-hover " href="# " uk-slidenav-next uk-slider-item="next "></a>
-
-                </div>
-
-
-            </div>
-
+          </div>
         </div>
+        <div id="p1" class="col-12 col-sm-4 py-5 text-center">
+          <div
+            class="uk-position-relative uk-visible-toggle uk-light"
+            tabindex="-1 "
+            uk-slider="center: true; autoplay: true; autoplay-interval: 4000; "
+          >
+            <h2 class="py-5 text-sec text-center">
+              <span class="underline">E-commerce</span>
+              <a
+                href="https://github.com/Francesco-Bellomi/progetto-ecommerce "
+                target="_blank "
+                ><i class="fab fa-github-alt text-sec github px-3"></i
+              ></a>
+              <i id="b1" class="remZoom fas fa-search-plus text-sec px-3"></i>
+            </h2>
+
+            <ul class="uk-slider-items uk-grid">
+              <li class="uk-width-1">
+                <div class="uk-panel">
+                  <img
+                    src="img2/progetto finale 1.png "
+                    class="img-fluid"
+                    alt=" "
+                  />
+                  <div class="uk-position-center uk-panel"></div>
+                </div>
+              </li>
+              <li class="uk-width-1">
+                <div class="uk-panel">
+                  <img
+                    src="img2/progetto finale 2.png "
+                    class="img-fluid"
+                    alt=" "
+                  />
+                  <div class="uk-position-center uk-panel"></div>
+                </div>
+              </li>
+              <li class="uk-width-1">
+                <div class="uk-panel">
+                  <img
+                    src="img2/progetto finale 3.png "
+                    class="img-fluid"
+                    alt=" "
+                  />
+                  <div class="uk-position-center uk-panel"></div>
+                </div>
+              </li>
+              <li class="uk-width-1">
+                <div class="uk-panel">
+                  <img
+                    src="img2/progetto finale 4.png "
+                    class="img-fluid"
+                    alt=" "
+                  />
+                  <div class="uk-position-center uk-panel"></div>
+                </div>
+              </li>
+              <li class="uk-width-1">
+                <div class="uk-panel">
+                  <img
+                    src="img2/progetto finale 5.png "
+                    class="img-fluid"
+                    alt=" "
+                  />
+                  <div class="uk-position-center uk-panel"></div>
+                </div>
+              </li>
+              <li class="uk-width-1">
+                <div class="uk-panel">
+                  <img
+                    src="img2/progetto finale 6.png "
+                    class="img-fluid"
+                    alt=" "
+                  />
+                  <div class="uk-position-center uk-panel"></div>
+                </div>
+              </li>
+            </ul>
+
+            <a
+              class="uk-position-center-left uk-position-small uk-hidden-hover"
+              href="# "
+              uk-slidenav-previous
+              uk-slider-item="previous "
+            ></a>
+            <a
+              class="uk-position-center-right uk-position-small uk-hidden-hover"
+              href="# "
+              uk-slidenav-next
+              uk-slider-item="next "
+            ></a>
+          </div>
+        </div>
+        <div id="p2" class="col-12 col-sm-4 py-5">
+          <div
+            class="uk-position-relative uk-visible-toggle uk-light"
+            tabindex="-1 "
+            uk-slider="center: true; autoplay: true; autoplay-interval: 4000; "
+          >
+            <h2 class="py-5 text-sec text-center">
+              <span class="underline">Blog di Auto</span>
+              <a
+                href="https://github.com/Francesco-Bellomi/Car-Blog "
+                target="_blank "
+                ><i class="fab fa-github-alt text-sec github px-3"></i
+              ></a>
+              <i id="b2" class="remZoom fas fa-search-plus text-sec px-3"></i>
+            </h2>
+            <p class="text-sec fs-5"></p>
+            <ul class="uk-slider-items uk-grid">
+              <li class="uk-width-1">
+                <div class="uk-panel">
+                  <img
+                    src="img2/Progetto blog car 1.png "
+                    class="img-fluid"
+                    alt=" "
+                  />
+                  <div class="uk-position-center uk-panel"></div>
+                </div>
+              </li>
+              <li class="uk-width-1">
+                <div class="uk-panel">
+                  <img src="img2/carblog 3.png " class="img-fluid" alt=" " />
+                  <div class="uk-position-center uk-panel"></div>
+                </div>
+              </li>
+              <li class="uk-width-1">
+                <div class="uk-panel">
+                  <img src="img2/carblog 4.png " class="img-fluid" alt=" " />
+                  <div class="uk-position-center uk-panel"></div>
+                </div>
+              </li>
+            </ul>
+
+            <a
+              class="uk-position-center-left uk-position-small uk-hidden-hover"
+              href="# "
+              uk-slidenav-previous
+              uk-slider-item="previous "
+            ></a>
+            <a
+              class="uk-position-center-right uk-position-small uk-hidden-hover"
+              href="# "
+              uk-slidenav-next
+              uk-slider-item="next "
+            ></a>
+          </div>
+        </div>
+        <div id="p3" class="col-12 col-sm-4 py-5">
+          <div
+            class="uk-position-relative uk-visible-toggle uk-light"
+            tabindex="-1"
+            uk-slider="center: true; autoplay: true; autoplay-interval: 4000; "
+          >
+            <h2 class="py-5 text-sec text-center">
+              <span class="underline">Sito Dentista</span>
+              <a
+                href="https://github.com/Francesco-Bellomi/Progetto-Dentista "
+                target="_blank "
+                ><i class="fab fa-github-alt text-sec github px-3"></i
+              ></a>
+              <i id="b3" class="remZoom fas fa-search-plus text-sec px-3"></i>
+            </h2>
+
+            <ul class="uk-slider-items uk-grid">
+              <li class="uk-width-1">
+                <div class="uk-panel">
+                  <img
+                    src="img2/progetto dentista 1.png "
+                    class="img-fluid"
+                    alt=" "
+                  />
+                  <div class="uk-position-center uk-panel"></div>
+                </div>
+              </li>
+              <li class="uk-width-1">
+                <div class="uk-panel">
+                  <img
+                    src="img2/progetto dentista 2.png "
+                    class="img-fluid"
+                    alt=" "
+                  />
+                  <div class="uk-position-center uk-panel"></div>
+                </div>
+              </li>
+              <li class="uk-width-1">
+                <div class="uk-panel">
+                  <img
+                    src="img2/progetto dentista 3.png "
+                    class="img-fluid"
+                    alt=" "
+                  />
+                  <div class="uk-position-center uk-panel"></div>
+                </div>
+              </li>
+              <li class="uk-width-1">
+                <div class="uk-panel">
+                  <img
+                    src="img2/progetto dentista 4.png "
+                    class="img-fluid"
+                    alt=" "
+                  />
+                  <div class="uk-position-center uk-panel"></div>
+                </div>
+              </li>
+              <li class="uk-width-1">
+                <div class="uk-panel">
+                  <img
+                    src="img2/progetto dentista 5.png "
+                    class="img-fluid"
+                    alt=" "
+                  />
+                  <div class="uk-position-center uk-panel"></div>
+                </div>
+              </li>
+            </ul>
+
+            <a
+              class="uk-position-center-left uk-position-small uk-hidden-hover"
+              href="# "
+              uk-slidenav-previous
+              uk-slider-item="previous "
+            ></a>
+            <a
+              class="uk-position-center-right uk-position-small uk-hidden-hover"
+              href="# "
+              uk-slidenav-next
+              uk-slider-item="next "
+            ></a>
+          </div>
+        </div>
+        <div id="p4" class="col-12 col-sm-4 py-5">
+          <div
+            class="uk-position-relative uk-visible-toggle uk-light"
+            tabindex="-1 "
+            uk-slider="center: true; autoplay: true; autoplay-interval: 4000; "
+          >
+            <h2 class="py-5 text-sec text-center">
+              <span class="underline">Landing Page</span>
+              <a
+                href="https://github.com/Francesco-Bellomi/LandingPageRed "
+                target="_blank "
+                ><i class="fab fa-github-alt text-sec github px-3"></i
+              ></a>
+              <i id="b4" class="remZoom fas fa-search-plus text-sec px-3"></i>
+            </h2>
+
+            <ul class="uk-slider-items uk-grid">
+              <li class="uk-width-1">
+                <div class="uk-panel">
+                  <img
+                    src="img2/progetto red 1.png "
+                    class="img-fluid"
+                    alt=" "
+                  />
+                  <div class="uk-position-center uk-panel"></div>
+                </div>
+              </li>
+              <li class="uk-width-1">
+                <div class="uk-panel">
+                  <img
+                    src="img2/progetto red 2.png "
+                    class="img-fluid"
+                    alt=" "
+                  />
+                  <div class="uk-position-center uk-panel"></div>
+                </div>
+              </li>
+              <li class="uk-width-1">
+                <div class="uk-panel">
+                  <img
+                    src="img2/progetto red 3.png "
+                    class="img-fluid"
+                    alt=" "
+                  />
+                  <div class="uk-position-center uk-panel"></div>
+                </div>
+              </li>
+              <li class="uk-width-1">
+                <div class="uk-panel">
+                  <img
+                    src="img2/progetto red 4.png "
+                    class="img-fluid"
+                    alt=" "
+                  />
+                  <div class="uk-position-center uk-panel"></div>
+                </div>
+              </li>
+              <li class="uk-width-1">
+                <div class="uk-panel">
+                  <img
+                    src="img2/progetto red 4.png "
+                    class="img-fluid"
+                    alt=" "
+                  />
+                  <div class="uk-position-center uk-panel"></div>
+                </div>
+              </li>
+              <li class="uk-width-1">
+                <div class="uk-panel">
+                  <img
+                    src="img2/progetto red 5.png "
+                    class="img-fluid"
+                    alt=" "
+                  />
+                  <div class="uk-position-center uk-panel"></div>
+                </div>
+              </li>
+            </ul>
+
+            <a
+              class="uk-position-center-left uk-position-small uk-hidden-hover"
+              href="# "
+              uk-slidenav-previous
+              uk-slider-item="previous "
+            ></a>
+            <a
+              class="uk-position-center-right uk-position-small uk-hidden-hover"
+              href="# "
+              uk-slidenav-next
+              uk-slider-item="next "
+            ></a>
+          </div>
+        </div>
+        <div id="p5" class="col-12 col-sm-4 py-5">
+          <div
+            class="uk-position-relative uk-visible-toggle uk-light"
+            tabindex="-1 "
+            uk-slider="center: true; autoplay: true; autoplay-interval: 4000; "
+          >
+            <h2 class="py-5 text-sec text-center">
+              <span class="underline">E-commerce</span>
+              <a
+                href="https://github.com/Francesco-Bellomi/Recap-Project "
+                target="_blank "
+                ><i class="fab fa-github-alt text-sec github px-3"></i
+              ></a>
+              <i id="b5" class="remZoom fas fa-search-plus text-sec px-3"></i>
+            </h2>
+
+            <ul class="uk-slider-items uk-grid">
+              <li class="uk-width-1">
+                <div class="uk-panel">
+                  <img
+                    src="img2/Recap online 1.png "
+                    class="img-fluid"
+                    alt=" "
+                  />
+                  <div class="uk-position-center uk-panel"></div>
+                </div>
+              </li>
+              <li class="uk-width-1">
+                <div class="uk-panel">
+                  <img
+                    src="img2/recap online 2.png "
+                    class="img-fluid"
+                    alt=" "
+                  />
+                  <div class="uk-position-center uk-panel"></div>
+                </div>
+              </li>
+              <li class="uk-width-1">
+                <div class="uk-panel">
+                  <img
+                    src="img2/recap online 3.png "
+                    class="img-fluid"
+                    alt=" "
+                  />
+                  <div class="uk-position-center uk-panel"></div>
+                </div>
+              </li>
+              <li class="uk-width-1">
+                <div class="uk-panel">
+                  <img
+                    src="img2/recap online 4.png "
+                    class="img-fluid"
+                    alt=" "
+                  />
+                  <div class="uk-position-center uk-panel"></div>
+                </div>
+              </li>
+              <li class="uk-width-1">
+                <div class="uk-panel">
+                  <img
+                    src="img2/recap online 5.png "
+                    class="img-fluid"
+                    alt=" "
+                  />
+                  <div class="uk-position-center uk-panel"></div>
+                </div>
+              </li>
+            </ul>
+
+            <a
+              class="uk-position-center-left uk-position-small uk-hidden-hover"
+              href="# "
+              uk-slidenav-previous
+              uk-slider-item="previous "
+            ></a>
+            <a
+              class="uk-position-center-right uk-position-small uk-hidden-hover"
+              href="# "
+              uk-slidenav-next
+              uk-slider-item="next "
+            ></a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Contacts -->
     <section id="contacts">
-        <div class="container-fluid ">
-            <div class="row align-items-center text-center ">
-                <div class="col-12 ">
-                    <h2 class="underline py-5 ">Contacts</h2>
-                </div>
-                <!-- Linkedin  -->
-                <div class="col-6 col-md-3 py-5 ">
-                    <button type="button " class="btn btn-custom py-3 " data-bs-toggle="modal" data-bs-target="#exampleModal">     
-                        <i class="fab fa-3x fa-linkedin text-main "></i>
-                    </button>
-                </div>
-                <!-- Github  -->
-                <div class="col-6 col-md-3 py-5 ">
-                    <button type="button " class="btn btn-custom py-3 " data-bs-toggle="modal" data-bs-target="#exampleModal1">     
-                        <i class="fab fa-3x fa-github text-main "></i>
-                    </button>
-                </div>
-                <!-- Telefono  -->
-                <div class="col-6 col-md-3 py-5 ">
-                    <button type="button " class="btn btn-custom py-3 " data-bs-toggle="modal" data-bs-target="#exampleModal2">     
-                        <i class="fas fa-3x fa-mobile-alt text-main "></i>
-                    </button>
-                </div>
-                <!-- E-mail  -->
-                <div class="col-6 col-md-3 py-5 ">
-                    <button type="button " class="btn btn-custom py-3 " data-bs-toggle="modal" data-bs-target="#exampleModal3">     
-                        <i class="far fa-3x fa-envelope text-main "></i>
-                    </button>
-                </div>
-            </div>
+      <div class="container-fluid">
+        <div class="row align-items-center text-center">
+          <div class="col-12">
+            <h2 class="underline py-5">Contacts</h2>
+          </div>
+          <!-- Linkedin  -->
+          <div class="col-6 col-md-3 py-5">
+            <button
+              type="button "
+              class="btn btn-custom py-3"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <i class="fab fa-3x fa-linkedin text-main"></i>
+            </button>
+          </div>
+          <!-- Github  -->
+          <div class="col-6 col-md-3 py-5">
+            <button
+              type="button "
+              class="btn btn-custom py-3"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal1"
+            >
+              <i class="fab fa-3x fa-github text-main"></i>
+            </button>
+          </div>
+          <!-- Telefono  -->
+          <div class="col-6 col-md-3 py-5">
+            <button
+              type="button "
+              class="btn btn-custom py-3"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal2"
+            >
+              <i class="fas fa-3x fa-mobile-alt text-main"></i>
+            </button>
+          </div>
+          <!-- E-mail  -->
+          <div class="col-6 col-md-3 py-5">
+            <button
+              type="button "
+              class="btn btn-custom py-3"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal3"
+            >
+              <i class="far fa-3x fa-envelope text-main"></i>
+            </button>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- upButton  -->
     <a href="#start" class="upButton">
-        <i class="fas fa-chevron-up tx-black fa-2x upCustom"></i>
+      <i class="fas fa-chevron-up tx-black fa-2x upCustom"></i>
     </a>
-
 
     <!-- Loader -->
     <div class="loader-wrapper">
-        <div class="loading"></div>
+      <div class="loading"></div>
     </div>
 
-
     <!-- Modal linkedin -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered ">
-            <div class="modal-content ">
-                <div class="modal-header text-center d-block ">
-                    <h5 class="modal-title text-center " id="exampleModalLabel">Profilo Linkedin</h5>
-                </div>
-                <div class="modal-body text-center ">
-                    <a href="https://www.linkedin.com/in/francesco-bellomi/" target="_blank ">https://www.linkedin.com/in/francesco-bellomi/</a>
-                </div>
-            </div>
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header text-center d-block">
+            <h5 class="modal-title text-center" id="exampleModalLabel">
+              Profilo Linkedin
+            </h5>
+          </div>
+          <div class="modal-body text-center">
+            <a
+              href="https://www.linkedin.com/in/francesco-bellomi/"
+              target="_blank "
+              >https://www.linkedin.com/in/francesco-bellomi/</a
+            >
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Modal Github  -->
-    <div class="modal fade" id="exampleModal1" tabindex="-1 " aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered ">
-            <div class="modal-content ">
-                <div class="modal-header text-center d-block ">
-                    <h5 class="modal-title text-center " id="exampleModalLabel">Profilo Github</h5>
-                </div>
-                <div class="modal-body text-center ">
-                    <a href="https://github.com/Francesco-Bellomi " target="_blank ">https://github.com/Francesco-Bellomi</a>
-                </div>
-            </div>
+    <div
+      class="modal fade"
+      id="exampleModal1"
+      tabindex="-1 "
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header text-center d-block">
+            <h5 class="modal-title text-center" id="exampleModalLabel">
+              Profilo Github
+            </h5>
+          </div>
+          <div class="modal-body text-center">
+            <a href="https://github.com/Francesco-Bellomi " target="_blank "
+              >https://github.com/Francesco-Bellomi</a
+            >
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Modal Telefono  -->
-    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered ">
-            <div class="modal-content ">
-                <div class="modal-header text-center d-block ">
-                    <h5 class="modal-title text-center " id="exampleModalLabel">Numero di Telefono</h5>
-                </div>
-                <div class="modal-body text-center ">
-                    <a href="tel:+39 3396745253 " target="_blank ">+39 3396745253</a>
-                </div>
-            </div>
+    <div
+      class="modal fade"
+      id="exampleModal2"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header text-center d-block">
+            <h5 class="modal-title text-center" id="exampleModalLabel">
+              Numero di Telefono
+            </h5>
+          </div>
+          <div class="modal-body text-center">
+            <a href="tel:+39 3396745253 " target="_blank ">+39 3396745253</a>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Modal E-mail  -->
-    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered ">
-            <div class="modal-content ">
-                <div class="modal-header text-center d-block ">
-                    <h5 class="modal-title text-center " id="exampleModalLabel">Mandami una mail</h5>
-                </div>
-                <div class="modal-body text-center ">
-                    <a href="mailto:bellomifrancesco@live.it" target="_blank">bellomifrancesco@live.it</a>
-                </div>
-            </div>
+    <div
+      class="modal fade"
+      id="exampleModal3"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header text-center d-block">
+            <h5 class="modal-title text-center" id="exampleModalLabel">
+              Mandami una mail
+            </h5>
+          </div>
+          <div class="modal-body text-center">
+            <a href="mailto:bellomifrancesco@live.it" target="_blank"
+              >bellomifrancesco@live.it</a
+            >
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js " integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4 " crossorigin="anonymous "></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js "
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4 "
+      crossorigin="anonymous "
+    ></script>
 
     <!-- Jquery  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js " integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js "
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin=" anonymous "
+      referrerpolicy="no-referrer "
+    ></script>
 
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit.min.js "></script>
@@ -585,7 +872,5 @@
 
     <!-- script.js  -->
     <script src="script.js "></script>
-
-</body>
-
+  </body>
 </html>

@@ -228,3 +228,8 @@ i:hover {
     bottom: 30px;
     right: 31px;
 }
+
+.mobile-menu{
+    background: #F76600;
+    border-radius: 50%;
+}
